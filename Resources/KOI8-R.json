@@ -1,11 +1,910 @@
-"characters":
-[
-    {
-        "code": 32,
-        "filename": "space.xbm"
-    },
-    {
-        "code": 33,
-        "filename": "exclam.xbm"
-    },
-]
+{
+    "characters":
+    [
+        {
+            "code": 32,
+            "filename": "space"
+        },
+        {
+            "code": 33,
+            "filename": "exclam"
+        },
+        {
+            "code": 34,
+            "filename": "quotedbl"
+        },
+        {
+            "code": 35,
+            "filename": "numbersign"
+        },
+        {
+            "code": 36,
+            "filename": "dollar"
+        },
+        {
+            "code": 37,
+            "filename": "percent"
+        },
+        {
+            "code": 38,
+            "filename": "ampersand"
+        },
+        {
+            "code": 39,
+            "filename": "apostrophe"
+        },
+        {
+            "code": 40,
+            "filename": "parenleft"
+        },
+        {
+            "code": 41,
+            "filename": "parenright"
+        },
+        {
+            "code": 42,
+            "filename": "asterisk"
+        },
+        {
+            "code": 43,
+            "filename": "plus"
+        },
+        {
+            "code": 44,
+            "filename": "comma"
+        },
+        {
+            "code": 45,
+            "filename": "minus"
+        },
+        {
+            "code": 46,
+            "filename": "period"
+        },
+        {
+            "code": 47,
+            "filename": "slash"
+        },
+
+        {
+            "code": 48,
+            "filename": "zero"
+        },
+        {
+            "code": 49,
+            "filename": "one"
+        },
+        {
+            "code": 50,
+            "filename": "two"
+        },
+        {
+            "code": 51,
+            "filename": "three"
+        },
+        {
+            "code": 52,
+            "filename": "four"
+        },
+        {
+            "code": 53,
+            "filename": "five"
+        },
+        {
+            "code": 54,
+            "filename": "six"
+        },
+        {
+            "code": 55,
+            "filename": "seven"
+        },
+        {
+            "code": 56,
+            "filename": "eight"
+        },
+        {
+            "code": 58,
+            "filename": "colon"
+        },
+        {
+            "code": 59,
+            "filename": "semicolon"
+        },
+        {
+            "code": 60,
+            "filename": "less"
+        },
+        {
+            "code": 61,
+            "filename": "equal"
+        },
+        {
+            "code": 62,
+            "filename": "greater"
+        },
+        {
+            "code": 63,
+            "filename": "question"
+        },
+
+        {
+            "code": 64,
+            "filename": "at"
+        },
+        {
+            "code": 65,
+            "filename": "A"
+        },
+        {
+            "code": 66,
+            "filename": "B"
+        },
+        {
+            "code": 67,
+            "filename": "C"
+        },
+        {
+            "code": 68,
+            "filename": "D"
+        },
+        {
+            "code": 69,
+            "filename": "E"
+        },
+        {
+            "code": 70,
+            "filename": "F"
+        },
+        {
+            "code": 71,
+            "filename": "G"
+        },
+        {
+            "code": 72,
+            "filename": "H"
+        },
+        {
+            "code": 73,
+            "filename": "I"
+        },
+        {
+            "code": 74,
+            "filename": "J"
+        },
+        {
+            "code": 75,
+            "filename": "K"
+        },
+        {
+            "code": 76,
+            "filename": "L"
+        },
+        {
+            "code": 77,
+            "filename": "M"
+        },
+        {
+            "code": 78,
+            "filename": "N"
+        },
+        {
+            "code": 79,
+            "filename": "O"
+        },
+
+        {
+            "code": 80,
+            "filename": "P"
+        },
+        {
+            "code": 81,
+            "filename": "Q"
+        },
+        {
+            "code": 82,
+            "filename": "R"
+        },
+        {
+            "code": 83,
+            "filename": "S"
+        },
+        {
+            "code": 84,
+            "filename": "T"
+        },
+        {
+            "code": 85,
+            "filename": "U"
+        },
+        {
+            "code": 86,
+            "filename": "V"
+        },
+        {
+            "code": 87,
+            "filename": "W"
+        },
+        {
+            "code": 88,
+            "filename": "X"
+        },
+        {
+            "code": 89,
+            "filename": "Y"
+        },
+        {
+            "code": 90,
+            "filename": "Z"
+        },
+        {
+            "code": 91,
+            "filename": "bracketleft"
+        },
+        {
+            "code": 92,
+            "filename": "backslash"
+        },
+        {
+            "code": 93,
+            "filename": "bracketright"
+        },
+        {
+            "code": 94,
+            "filename": "asciicircum"
+        },
+        {
+            "code": 95,
+            "filename": "underscore"
+        },
+
+        {
+            "code": 96,
+            "filename": "grave"
+        },
+        {
+            "code": 97,
+            "filename": "a"
+        },
+        {
+            "code": 98,
+            "filename": "b"
+        },
+        {
+            "code": 99,
+            "filename": "c"
+        },
+        {
+            "code": 100,
+            "filename": "d"
+        },
+        {
+            "code": 101,
+            "filename": "e"
+        },
+        {
+            "code": 102,
+            "filename": "f"
+        },
+        {
+            "code": 103,
+            "filename": "g"
+        },
+        {
+            "code": 104,
+            "filename": "h"
+        },
+        {
+            "code": 105,
+            "filename": "i"
+        },
+        {
+            "code": 106,
+            "filename": "j"
+        },
+        {
+            "code": 107,
+            "filename": "k"
+        },
+        {
+            "code": 108,
+            "filename": "l"
+        },
+        {
+            "code": 109,
+            "filename": "m"
+        },
+        {
+            "code": 110,
+            "filename": "n"
+        },
+        {
+            "code": 111,
+            "filename": "o"
+        },
+
+        {
+            "code": 112,
+            "filename": "p"
+        },
+        {
+            "code": 113,
+            "filename": "q"
+        },
+        {
+            "code": 114,
+            "filename": "r"
+        },
+        {
+            "code": 115,
+            "filename": "s"
+        },
+        {
+            "code": 116,
+            "filename": "t"
+        },
+        {
+            "code": 117,
+            "filename": "u"
+        },
+        {
+            "code": 118,
+            "filename": "v"
+        },
+        {
+            "code": 119,
+            "filename": "w"
+        },
+        {
+            "code": 120,
+            "filename": "x"
+        },
+        {
+            "code": 121,
+            "filename": "y"
+        },
+        {
+            "code": 122,
+            "filename": "z"
+        },
+        {
+            "code": 123,
+            "filename": "braceleft"
+        },
+        {
+            "code": 124,
+            "filename": "bar"
+        },
+        {
+            "code": 125,
+            "filename": "braceright"
+        },
+        {
+            "code": 126,
+            "filename": "asciitilde"
+        },
+        {
+            "code": 127,
+            "filename": "exclamdown"
+        },
+
+        {
+            "code": 128,
+            "filename": "SF100000"
+        },
+        {
+            "code": 129,
+            "filename": "SF110000"
+        },
+        {
+            "code": 130,
+            "filename": "SF010000"
+        },
+        {
+            "code": 131,
+            "filename": "SF030000"
+        },
+        {
+            "code": 132,
+            "filename": "SF020000"
+        },
+        {
+            "code": 133,
+            "filename": "SF040000"
+        },
+        {
+            "code": 134,
+            "filename": "SF080000"
+        },
+        {
+            "code": 135,
+            "filename": "SF090000"
+        },
+        {
+            "code": 136,
+            "filename": "SF060000"
+        },
+        {
+            "code": 137,
+            "filename": "SF070000"
+        },
+        {
+            "code": 138,
+            "filename": "SF050000"
+        },
+        {
+            "code": 139,
+            "filename": "upblock"
+        },
+        {
+            "code": 140,
+            "filename": "dnblock"
+        },
+        {
+            "code": 141,
+            "filename": "block"
+        },
+        {
+            "code": 142,
+            "filename": "lfblock"
+        },
+        {
+            "code": 143,
+            "filename": "rtblock"
+        },
+
+        {
+            "code": 144,
+            "filename": "ltshade"
+        },
+        {
+            "code": 145,
+            "filename": "shade"
+        },
+        {
+            "code": 146,
+            "filename": "dkshade"
+        },
+        {
+            "code": 147,
+            "filename": "integraltp"
+        },
+        {
+            "code": 148,
+            "filename": "squaresmallsolid"
+        },
+        {
+            "code": 149,
+            "filename": "uni2219"
+        },
+        {
+            "code": 150,
+            "filename": "radical"
+        },
+        {
+            "code": 151,
+            "filename": "approxequal"
+        },
+        {
+            "code": 152,
+            "filename": "lessequal"
+        },
+        {
+            "code": 153,
+            "filename": "greaterequal"
+        },
+        {
+            "code": 154,
+            "filename": "nonbreakingspace"
+        },
+        {
+            "code": 155,
+            "filename": "integralbt"
+        },
+        {
+            "code": 156,
+            "filename": "degree"
+        },
+        {
+            "code": 157,
+            "filename": "twosuperior"
+        },
+        {
+            "code": 158,
+            "filename": "middot"
+        },
+        {
+            "code": 159,
+            "filename": "divide"
+        },
+
+        {
+            "code": 160,
+            "filename": "SF430000"
+        },
+        {
+            "code": 161,
+            "filename": "SF240000"
+        },
+        {
+            "code": 162,
+            "filename": "SF510000"
+        },
+        {
+            "code": 163,
+            "filename": "iocyrillic"
+        },
+        {
+            "code": 164,
+            "filename": "SF520000"
+        },
+        {
+            "code": 165,
+            "filename": "SF390000"
+        },
+        {
+            "code": 166,
+            "filename": "SF220000"
+        },
+        {
+            "code": 167,
+            "filename": "SF210000"
+        },
+        {
+            "code": 168,
+            "filename": "SF250000"
+        },
+        {
+            "code": 169,
+            "filename": "SF500000"
+        },
+        {
+            "code": 170,
+            "filename": "SF490000"
+        },
+        {
+            "code": 171,
+            "filename": "SF380000"
+        },
+        {
+            "code": 172,
+            "filename": "SF280000"
+        },
+        {
+            "code": 173,
+            "filename": "SF270000"
+        },
+        {
+            "code": 174,
+            "filename": "SF260000"
+        },
+        {
+            "code": 175,
+            "filename": "SF360000"
+        },
+
+        {
+            "code": 176,
+            "filename": "SF370000"
+        },
+        {
+            "code": 177,
+            "filename": "SF420000"
+        },
+        {
+            "code": 178,
+            "filename": "SF190000"
+        },
+        {
+            "code": 179,
+            "filename": "Iocyrillic"
+        },
+        {
+            "code": 180,
+            "filename": "SF200000"
+        },
+        {
+            "code": 181,
+            "filename": "SF230000"
+        },
+        {
+            "code": 182,
+            "filename": "SF470000"
+        },
+        {
+            "code": 183,
+            "filename": "SF480000"
+        },
+        {
+            "code": 184,
+            "filename": "SF410000"
+        },
+        {
+            "code": 185,
+            "filename": "SF450000"
+        },
+        {
+            "code": 186,
+            "filename": "SF460000"
+        },
+        {
+            "code": 187,
+            "filename": "SF400000"
+        },
+        {
+            "code": 188,
+            "filename": "SF540000"
+        },
+        {
+            "code": 189,
+            "filename": "SF530000"
+        },
+        {
+            "code": 190,
+            "filename": "SF440000"
+        },
+        {
+            "code": 191,
+            "filename": "copyright"
+        },
+
+        {
+            "code": 192,
+            "filename": "iucyrillic"
+        },
+        {
+            "code": 193,
+            "filename": "acyrillic"
+        },
+        {
+            "code": 194,
+            "filename": "becyrillic"
+        },
+        {
+            "code": 195,
+            "filename": "tsecyrillic"
+        },
+        {
+            "code": 196,
+            "filename": "decyrillic"
+        },
+        {
+            "code": 197,
+            "filename": "iecyrillic"
+        },
+        {
+            "code": 198,
+            "filename": "efcyrillic"
+        },
+        {
+            "code": 199,
+            "filename": "gecyrillic"
+        },
+        {
+            "code": 200,
+            "filename": "khacyrillic"
+        },
+        {
+            "code": 201,
+            "filename": "iicyrillic"
+        },
+        {
+            "code": 202,
+            "filename": "iishortcyrillic"
+        },
+        {
+            "code": 203,
+            "filename": "kacyrillic"
+        },
+        {
+            "code": 204,
+            "filename": "elcyrillic"
+        },
+        {
+            "code": 205,
+            "filename": "emcyrillic"
+        },
+        {
+            "code": 206,
+            "filename": "encyrillic"
+        },
+        {
+            "code": 207,
+            "filename": "ocyrillic"
+        },
+
+        {
+            "code": 208,
+            "filename": "pecyrillic"
+        },
+        {
+            "code": 209,
+            "filename": "iacyrillic"
+        },
+        {
+            "code": 210,
+            "filename": "ercyrillic"
+        },
+        {
+            "code": 211,
+            "filename": "escyrillic"
+        },
+        {
+            "code": 212,
+            "filename": "tecyrillic"
+        },
+        {
+            "code": 213,
+            "filename": "ucyrillic"
+        },
+        {
+            "code": 214,
+            "filename": "zhecyrillic"
+        },
+        {
+            "code": 215,
+            "filename": "vecyrillic"
+        },
+        {
+            "code": 216,
+            "filename": "softsigncyrillic"
+        },
+        {
+            "code": 217,
+            "filename": "yericyrillic"
+        },
+        {
+            "code": 218,
+            "filename": "zecyrillic"
+        },
+        {
+            "code": 219,
+            "filename": "shacyrillic"
+        },
+        {
+            "code": 220,
+            "filename": "ereversedcyrillic"
+        },
+        {
+            "code": 221,
+            "filename": "shchacyrillic"
+        },
+        {
+            "code": 222,
+            "filename": "checyrillic"
+        },
+        {
+            "code": 223,
+            "filename": "hardsigncyrillic"
+        },
+
+        {
+            "code": 224,
+            "filename": "Iucyrillic"
+        },
+        {
+            "code": 225,
+            "filename": "Acyrillic"
+        },
+        {
+            "code": 226,
+            "filename": "Becyrillic"
+        },
+        {
+            "code": 227,
+            "filename": "Tsecyrillic"
+        },
+        {
+            "code": 228,
+            "filename": "Decyrillic"
+        },
+        {
+            "code": 229,
+            "filename": "Iecyrillic"
+        },
+        {
+            "code": 230,
+            "filename": "Efcyrillic"
+        },
+        {
+            "code": 231,
+            "filename": "Gecyrillic"
+        },
+        {
+            "code": 232,
+            "filename": "Khacyrillic"
+        },
+        {
+            "code": 233,
+            "filename": "Iicyrillic"
+        },
+        {
+            "code": 234,
+            "filename": "Iishortcyrillic"
+        },
+        {
+            "code": 235,
+            "filename": "Kacyrillic"
+        },
+        {
+            "code": 236,
+            "filename": "Elcyrillic"
+        },
+        {
+            "code": 237,
+            "filename": "Emcyrillic"
+        },
+        {
+            "code": 238,
+            "filename": "Encyrillic"
+        },
+        {
+            "code": 239,
+            "filename": "Ocyrillic"
+        },
+
+        {
+            "code": 240,
+            "filename": "Pecyrillic"
+        },
+        {
+            "code": 241,
+            "filename": "Iacyrillic"
+        },
+        {
+            "code": 242,
+            "filename": "Ercyrillic"
+        },
+        {
+            "code": 243,
+            "filename": "Escyrillic"
+        },
+        {
+            "code": 244,
+            "filename": "Tecyrillic"
+        },
+        {
+            "code": 245,
+            "filename": "Ucyrillic"
+        },
+        {
+            "code": 246,
+            "filename": "Zhecyrillic"
+        },
+        {
+            "code": 247,
+            "filename": "Vecyrillic"
+        },
+        {
+            "code": 248,
+            "filename": "Softsigncyrillic"
+        },
+        {
+            "code": 249,
+            "filename": "Yericyrillic"
+        },
+        {
+            "code": 250,
+            "filename": "Zecyrillic"
+        },
+        {
+            "code": 251,
+            "filename": "Shacyrillic"
+        },
+        {
+            "code": 252,
+            "filename": "Ereversedcyrillic"
+        },
+        {
+            "code": 253,
+            "filename": "Shchacyrillic"
+        },
+        {
+            "code": 254,
+            "filename": "Checyrillic"
+        },
+        {
+            "code": 255,
+            "filename": "Hardsigncyrillic"
+        }
+    ]
+}
