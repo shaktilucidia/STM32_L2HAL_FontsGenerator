@@ -1,5 +1,5 @@
 # STM32_L2HAL_FontsGenerator
-Fonts generator to use with STM32 HAL
+Fonts generator to use with STM32 L2HAL
 
 1) Extract font using Font Forge and given script:
 
@@ -20,3 +20,4 @@ mogrify -resize 32x ./*.png
 mogrify -format xbm ./*.png
 
 
+4) Set correct path in FontGenerator's Program.cs, compile and run
