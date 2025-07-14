@@ -86,77 +86,59 @@ public class XbmFile
     {
         var content = File.ReadAllText(path);
         
-        var datasetNameMatches = DatasetNameRegexp.Matches(content);
-        if (!datasetNameMatches.Any())
-        {
-            throw new ArgumentException("Not a valid XBM file!", nameof(path));
-        }
-
         #region Dataset name
         
-        var datasetName = datasetNameMatches
-            .First()
-            .Groups["dataset"]
-            .Captures
-            .First()
-            .Value;
+        var datasetName = ExtractMatchGroup
+        (
+            content,
+            DatasetNameRegexpText,
+            "dataset",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase
+        );
         
         #endregion
         
         #region Width
-        
-        var widthRegexp = new Regex(String.Format(WidthRegexpTemplate, datasetName), RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        
-        var widthMatches = widthRegexp.Matches(content);
-        if (!widthMatches.Any())
-        {
-            throw new ArgumentException("Width is missing!", nameof(path));
-        }
-        
-        var width = int.Parse(widthMatches
-            .First()
-            .Groups["width"]
-            .Captures
-            .First()
-            .Value);
+
+        var width = int.Parse
+        (
+            ExtractMatchGroup
+            (
+                content,
+                String.Format(WidthRegexpTemplate, datasetName),
+                "width",
+                RegexOptions.Compiled | RegexOptions.IgnoreCase
+            )
+        );
         
         #endregion
         
         #region Height
         
-        var heightRegexp = new Regex(String.Format(HeightRegexpTemplate, datasetName), RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        
-        var heightMatches = heightRegexp.Matches(content);
-        if (!heightMatches.Any())
-        {
-            throw new ArgumentException("Height is missing!", nameof(path));
-        }
-        
-        var height = int.Parse(heightMatches
-            .First()
-            .Groups["height"]
-            .Captures
-            .First()
-            .Value);
+        var height = int.Parse
+        (
+            ExtractMatchGroup
+            (
+                content,
+                String.Format(HeightRegexpTemplate, datasetName),
+                "height",
+                RegexOptions.Compiled | RegexOptions.IgnoreCase
+            )
+        );
         
         #endregion
         
         #region Data
         
-        var dataRegexp = new Regex(DataRegexpTemplate.Replace("{0}", datasetName), RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        var dataRaw = ExtractMatchGroup
+        (
+            content,
+            DataRegexpTemplate.Replace("{0}", datasetName),
+            "data",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.Singleline
+        );
         
-        var dataMatches = dataRegexp.Matches(content);
-        if (!dataMatches.Any())
-        {
-            throw new ArgumentException("Data is missing!", nameof(path));
-        }
-        
-        var dataStrings = dataMatches
-            .First()
-            .Groups["data"]
-            .Captures
-            .First()
-            .Value
+        var dataStrings = dataRaw
             .Split(", ")
             .Select(s => s.Trim())
             .ToList();
@@ -173,5 +155,23 @@ public class XbmFile
         #endregion
 
         return new XbmFile(datasetName, width, height, data);
+    }
+
+    private static string ExtractMatchGroup(string content, string regexpTemplate, string groupName, RegexOptions regexpOptions)
+    {
+        var regexp = new Regex(regexpTemplate, regexpOptions);
+        
+        var matches = regexp.Matches(content);
+        if (!matches.Any())
+        {
+            throw new ArgumentException($"Cant extract group { groupName}!", nameof(content));
+        }
+        
+        return matches
+            .First()
+            .Groups[groupName]
+            .Captures
+            .First()
+            .Value;
     }
 }
