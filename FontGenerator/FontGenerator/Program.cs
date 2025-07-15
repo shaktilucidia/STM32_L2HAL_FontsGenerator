@@ -35,18 +35,13 @@ class Program
             
             charactersDictionary.Add(character.Code, XbmFile.Parse(fullPath));
         }
-        
-        // FMGL Font structure
-        // [9 bytes]: 'FMGLFONT1'
-        // [4 bytes]: characters count
-        // []: characters, each character is:
-        // -- [4 bytes]: code
-        // -- [2 bytes]: width
-        // -- [2 bytes]: height
-        // -- [width * height bytes]: character data
 
         using (var outputStream = new FileStream(resultFile, FileMode.Create))
         {
+            #region Header
+            
+            // Size: 16 bytes
+            
             // Signature
             outputStream.WriteByte(0x46);
             outputStream.WriteByte(0x4D);
@@ -56,16 +51,38 @@ class Program
             outputStream.WriteByte(0x4F);
             outputStream.WriteByte(0x4E);
             outputStream.WriteByte(0x54);
-            outputStream.WriteByte(0x31);
+            
+            // Version
+            outputStream.Write(BitConverter.GetBytes(1));
             
             // Characters count
             outputStream.Write(BitConverter.GetBytes(charactersDictionary.Count));
             
+            #endregion
+            
+            #region Characters table
+            
+            // Size: 8 bytes x characters count
+            
+            var offsetToNextCharacterData = 16 + 8 * charactersDictionary.Count;
+
             foreach (var character in charactersDictionary)
             {
                 // Code
                 outputStream.Write(BitConverter.GetBytes(character.Key));
                 
+                // Offset
+                outputStream.Write(BitConverter.GetBytes(offsetToNextCharacterData));
+                
+                offsetToNextCharacterData += character.Value.Data.Count + 8;
+            }
+            
+            #endregion
+            
+            #region Characters data
+            
+            foreach (var character in charactersDictionary)
+            {
                 // Width
                 outputStream.Write(BitConverter.GetBytes(character.Value.Width));
                 
@@ -75,6 +92,8 @@ class Program
                 // Data
                 outputStream.Write(character.Value.Data.ToArray());
             }
+            
+            #endregion
         }
 
         Console.WriteLine($"Missing files: {missingFilesCount}");
