@@ -74,7 +74,7 @@ class Program
                 // Offset
                 outputStream.Write(BitConverter.GetBytes(offsetToNextCharacterData));
                 
-                offsetToNextCharacterData += character.Value.Data.Count + 8;
+                offsetToNextCharacterData += character.Value.Data.Count + 12;
             }
             
             #endregion
