@@ -2,6 +2,10 @@
     "characters":
     [
         {
+            "code": 0,
+            "filename": ".notdef"
+        },
+        {
             "code": 32,
             "filename": "space"
         },

@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.4 Chrome/138.0.7204.97 Electron/37.2.1 Safari/537.36" version="28.0.4">
   <diagram name="Page-1" id="z8vJLyzw1SSsMf7IVAN1">
-    <mxGraphModel dx="1978" dy="1240" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2828" dy="1240" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -79,6 +79,9 @@
         </mxCell>
         <mxCell id="Wkk6yHHU4i2QVKpF-zxj-19" value="&lt;b&gt;Character&lt;/b&gt;&lt;div&gt;&lt;b&gt;12 + raster size bytes total&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="500" y="530" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ahfez4N5RPb9TojO1y-S-1" value="Note: Character with code 0 is always present and located first. This character have special meaning of wrong character code" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="250" width="260" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
