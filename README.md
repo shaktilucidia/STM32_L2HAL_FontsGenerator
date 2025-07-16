@@ -13,11 +13,13 @@ for glyph in font:
 
 2) Resize extracted glyphs to desired height in pixels:
 
-mogrify -resize 32x ./*.png
+mogrify -resize x32 ./*.png
+mogrify -resize x32 ./.*.png
 
 3) Convert glyphs to xbm format:
 
 mogrify -format xbm ./*.png
+mogrify -format xbm ./.*.png
 
 
 4) Set correct path in FontGenerator's Program.cs, compile and run
