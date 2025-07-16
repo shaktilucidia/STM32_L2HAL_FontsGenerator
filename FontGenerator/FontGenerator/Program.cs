@@ -90,7 +90,7 @@ class Program
                 outputStream.Write(BitConverter.GetBytes(character.Value.Height));
                 
                 // Raster size
-                outputStream.Write(BitConverter.GetBytes(character.Value.Data.Count));;
+                outputStream.Write(BitConverter.GetBytes(character.Value.Data.Count));
                 
                 // Data
                 outputStream.Write(character.Value.Data.ToArray());
